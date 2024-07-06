@@ -11,11 +11,11 @@
     <div class="container my-5">
         <h1>Thêm sản phẩm mới</h1>
 
-        <form action="admin" method="post">
-            <div class="form-group">
+        <form action="addProduct" method="post">
+            <!-- <div class="form-group">
                 <label for="id">ID:</label>
                 <input type="number" class="form-control" id="id" name="id" required>
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="productName">Tên sản phẩm:</label>
                 <input type="text" class="form-control" id="productName" name="productName" required>
@@ -45,6 +45,7 @@
                 <input type="number" class="form-control" id="quantity" name="quantity" required>
             </div>
             <button type="submit" class="btn btn-primary">Lưu</button>
+            <a class="btn btn-danger text-light" href="${pageContext.request.contextPath}/admin.jsp#showProduct">Thoat</a>
         </form>
     </div>
 </body>
